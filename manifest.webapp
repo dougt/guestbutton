@@ -11,5 +11,12 @@
     "name": "Arnau March",
     "url": "http://buildingfirefoxos.com"
   },
-  "default_locale": "en"
+  "default_locale": "en",
+  "permissions": {
+    "settings":{
+      "description": "we need to change the settings",
+      "access": "readwrite"
+     }
+  },
+  "type": "certified"
 }
