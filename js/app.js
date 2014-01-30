@@ -29,6 +29,7 @@ var app = app || {};
         buttonCancel.onclick = function() {
             window.close();
         };
+        var inputPin = document.getElementById()
     }
     app.setOption = function(value) {
         console.log('setOption');
