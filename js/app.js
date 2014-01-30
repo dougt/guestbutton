@@ -1,7 +1,7 @@
 var app = app || {};
 
 (function() {
-    var option = 'bluetooth',
+    var option = 'kidmode',
         settings = window.navigator.mozSettings;
     if (!settings) {
         console.log('no settings');
@@ -33,7 +33,7 @@ var app = app || {};
     app.setOption = function(value) {
         console.log('setOption');
         var propertyName = option + '.enabled';
-        var reqSet = settings.createLock().set({'bluetooth.enabled': value});
+        var reqSet = settings.createLock().set({'kidmode.enabled': value});
         console.log('we are going to close in a moment');
         reqSet.onsuccess = function () {
             console.log('close!');
