@@ -21,16 +21,18 @@ var app = app || {};
     };
     app.displayLockScreen = function() {
         document.body.style.display = 'block';
+        var inputPin = document.getElementById('input-pin');
         var buttonDisable = document.getElementById('button-disable');
         buttonDisable.onclick = function() {
-            app.setOption(false);
+            if(inputPin.value.length > 0) {
+                app.setOption(false);
+            }
         };
         var buttonCancel = document.getElementById('button-cancel');
         buttonCancel.onclick = function() {
             window.close();
         };
-        var inputPin = document.getElementById()
-    }
+    };
     app.setOption = function(value) {
         console.log('setOption');
         var propertyName = option + '.enabled';
