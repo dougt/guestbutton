@@ -1,6 +1,6 @@
 {
-  "name": "Building Blocks",
-  "description": "Building Blocks Demo App",
+  "name": "Guest Mode",
+  "description": "Switch guest mode on or off",
   "launch_path": "/app.html",
   "icons": {
     "128": "/images/app_icon_128.png",
