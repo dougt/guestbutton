@@ -1,5 +1,7 @@
 var app = app || {};
 
+var PASSWORD = 'qwerty';
+
 (function() {
     var option = 'kidmode',
         settings = window.navigator.mozSettings;
@@ -24,7 +26,7 @@ var app = app || {};
         var inputPin = document.getElementById('input-pin');
         var buttonDisable = document.getElementById('button-disable');
         buttonDisable.onclick = function() {
-            if(inputPin.value.length > 0) {
+            if(inputPin.value == 'qwerty') {
                 app.setOption(false);
             }
         };
